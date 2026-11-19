@@ -1,4 +1,4 @@
-# Hamid Raza — Developer Portfolio
+# Hamid Raza - Developer Portfolio
 
 A premium, dark-themed personal portfolio website for Hamid Raza, a Full Stack Developer
 specialising in ERP systems, ASP.NET Core MVC, SQL Server database
@@ -8,11 +8,11 @@ Live site: **https://hamidraza.onrender.com/**
 
 ## Tech Stack
 
-- HTML5 — semantic markup, no framework
-- CSS3 — custom properties, glassmorphism cards, responsive layout
-- Vanilla JavaScript — smooth scrolling, typing effect, mouse-spotlight
+- HTML5 - semantic markup, no framework
+- CSS3 - custom properties, glassmorphism cards, responsive layout
+- Vanilla JavaScript - smooth scrolling, typing effect, mouse-spotlight
   cards, scroll-reveal animations, contact form (mailto)
-- Google Fonts — Sora, Manrope, JetBrains Mono
+- Google Fonts - Sora, Manrope, JetBrains Mono
 
 No build step and no backend. The site is fully static.
 
