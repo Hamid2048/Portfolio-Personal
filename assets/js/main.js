@@ -1,8 +1,8 @@
 /* Contact details - used by the email links and the contact form. */
 var CONTACT = {
   email: "hamidraza2048@gmail.com",
-  github: "https://github.com/your-username",
-  linkedin: "https://www.linkedin.com/in/your-profile"
+  github: "https://github.com/Hamid2048",
+  linkedin: "https://www.linkedin.com/in/hamid-razaa"
 };
 
 (function () {
