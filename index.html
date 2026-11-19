@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="dark" />
+<meta name="description" content="Portfolio of a Full Stack Developer specializing in ERP systems, ASP.NET Core MVC, SQL Server, business dashboards, reporting and API integrations." />
+<meta name="theme-color" content="#05060b" />
+<meta property="og:title" content="Full Stack Developer — ERP, ASP.NET Core & SQL Server" />
+<meta property="og:description" content="Building digital solutions that make business smarter: ERP systems, dashboards, reporting and API integrations." />
+<meta property="og:type" content="website" />
+<link rel="icon" href="data:," />
+<title>Full Stack Developer — ERP · ASP.NET Core · SQL Server</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<div id="loader" aria-hidden="true">
+  <div class="loader-mark">&lt;<b>dev</b> /&gt;</div>
+  <div class="loader-bar"><i></i></div>
+</div>
+
+<div id="scrollProgress" aria-hidden="true"></div>
+<canvas id="particles" aria-hidden="true"></canvas>
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-glow" aria-hidden="true"></div>
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+
+<header id="siteHeader">
+  <div class="nav-inner">
+    <a class="logo" href="#home" aria-label="Home"><span class="dot"></span>&lt;dev<span>.portfolio</span> /&gt;</a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="#home" data-nav="home">Home</a>
+      <a href="#about" data-nav="about">About</a>
+      <a href="#skills" data-nav="skills">Skills</a>
+      <a href="#projects" data-nav="projects">Projects</a>
+      <a href="#journey" data-nav="journey">Journey</a>
+      <a href="#contact" data-nav="contact">Contact</a>
+    </nav>
+    <a class="nav-cta magnetic" href="#contact">Contact Me</a>
+    <button id="menuBtn" aria-label="Open menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home" data-nav="home">Home</a>
+  <a href="#about" data-nav="about">About</a>
+  <a href="#skills" data-nav="skills">Skills</a>
+  <a href="#projects" data-nav="projects">Projects</a>
+  <a href="#journey" data-nav="journey">Journey</a>
+  <a href="#contact" data-nav="contact">Contact</a>
+</div>
+
+<main>
+<!-- Hero -->
+<section id="home">
+  <div class="wrap hero-grid">
+    <div class="hero">
+      <span class="hero-badge reveal"><span class="pulse"></span> ERP Systems · Dashboards · Reporting</span>
+      <h1 class="reveal" data-delay="1">Building Digital Solutions That Make Business <span class="grad-text">Smarter.</span></h1>
+      <div class="hero-roles reveal" data-delay="2" aria-label="Roles">
+        <span class="prompt">&gt;_</span>
+        <span id="typed"></span><span class="caret" aria-hidden="true"></span>
+      </div>
+      <p class="hero-intro reveal" data-delay="3">I'm a Full Stack Developer specializing in ERP systems, business applications, database development and interactive web solutions.</p>
+      <div class="hero-actions reveal" data-delay="4">
+        <a class="btn btn-primary magnetic" href="#projects">
+          View My Projects
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn-ghost magnetic" href="#contact">
+          Contact Me
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
+        </a>
+      </div>
+      <div class="hero-socials reveal" data-delay="5">
+        <span class="lbl">Follow</span>
+        <a class="soc" href="#" data-contact-link="github" aria-label="GitHub profile (link to be added)" title="GitHub — add your profile URL">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </a>
+        <a class="soc" href="#" data-contact-link="linkedin" aria-label="LinkedIn profile (link to be added)" title="LinkedIn — add your profile URL">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+        </a>
+        <a class="soc" href="#" data-contact-link="email" aria-label="Email — hamidraza2048@gmail.com" title="Email — hamidraza2048@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal" data-delay="2">
+      <div class="chip-float chip-1"><span class="cdot" style="background:#4f7cff"></span> ASP.NET Core · .NET 7</div>
+      <div class="code-window" aria-hidden="true">
+        <div class="cw-head"><i></i><i></i><i></i><span>StockAdjustmentController.cs</span></div>
+        <div class="cw-body"><span class="tk-c">// Controller → Service → Repository</span>
+<span class="tk-k">public async</span> <span class="tk-t">Task</span>&lt;<span class="tk-t">IActionResult</span>&gt; <span class="tk-f">Save</span>(
+    StockAdjustment record)
+{
+    <span class="tk-k">var</span> result = <span class="tk-k">await</span> _service.<span class="tk-f">SaveAsync</span>(
+        record, CommonHelper.<span class="tk-f">GetValues</span>(HttpContext));
+
+    <span class="tk-k">return</span> <span class="tk-f">Json</span>(result); <span class="tk-c">// voucher saved ✓</span>
+}</div>
+      </div>
+      <div class="chip-float chip-2"><span class="cdot" style="background:#22d3ee"></span> SQL Server · Stored Procedures</div>
+      <div class="chip-float chip-3"><span class="cdot" style="background:#8b5cf6"></span> ERP · Dashboards · Reports</div>
+    </div>
+  </div>
+  <a class="scroll-hint" href="#about" aria-label="Scroll down to About section">
+    <span>Scroll</span>
+    <span class="mouse"><i></i></span>
+  </a>
+</section>
+
+<!-- About -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-tag">About Me</span>
+      <h2>Turning business processes into reliable software</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-copy reveal">
+        <p>I'm a <strong>Full Stack Developer</strong> who builds <strong>Enterprise Resource Planning (ERP) systems</strong> and business applications with <strong>ASP.NET Core MVC</strong> and <strong>SQL Server</strong>. My day-to-day work covers the full path of a feature — from database design and stored procedures, through backend architecture and business logic, to interactive frontends with data grids, dashboards and reports.</p>
+        <p>I work in a layered architecture — <strong>Controller → Service → Repository</strong> — so business rules stay clean, testable and easy to extend. On the frontend I build responsive interfaces with JavaScript, jQuery, Bootstrap and DevExtreme grids; on the data side I write optimized SQL with stored procedures, CTEs and views that power financial and operational reporting.</p>
+        <p>Beyond core ERP modules, I integrate external systems through <strong>REST APIs</strong> — including FBR Digital Invoicing — and automate repetitive business workflows so teams spend less time on manual work and more time on decisions.</p>
+      </div>
+      <div class="about-points reveal" data-delay="1">
+        <div class="about-point"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17V7l8-4 8 4v10l-8 4z"/><path d="M4 7l8 4 8-4M12 11v10"/></svg><span>Enterprise Resource Planning (ERP) systems</span></div>
+        <div class="about-point"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="m8 21h8M9 9l-2 3 2 3M13 15h4"/></svg><span>ASP.NET Core MVC applications</span></div>
+        <div class="about-point"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/><circle cx="12" cy="12" r="3"/></svg><span>Backend architecture &amp; business logic</span></div>
+        <div class="about-point"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg><span>SQL Server database development</span></div>
+        <div class="about-point"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 9v12"/></svg><span>Frontend development &amp; interactive grids</span></div>
+        <div class="about-point"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><span>Business dashboards &amp; reporting systems</span></div>
+        <div class="about-point"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 10a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg><span>API integrations</span></div>
+        <div class="about-point"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5z"/></svg><span>Business process automation</span></div>
+      </div>
+    </div>
+
+    <div class="stats reveal" style="margin-top:56px">
+      <div class="stat"><div class="num"><span data-count="6">0</span></div><div class="cap">Featured projects</div></div>
+      <div class="stat"><div class="num"><span data-count="32">0</span></div><div class="cap">Technologies in my stack</div></div>
+      <div class="stat"><div class="num"><span data-count="8">0</span></div><div class="cap">Services I offer</div></div>
+      <div class="stat"><div class="num"><span data-count="9">0</span></div><div class="cap">Milestones on my journey</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-tag">Technical Skills</span>
+      <h2>The stack I build with</h2>
+      <p>Tools and technologies I use in production work — grouped the way I actually use them, no inflated percentages.</p>
+    </div>
+    <div class="skills-grid">
+      <article class="skill-card reveal" style="--ac:#4f7cff">
+        <div class="skill-head">
+          <div class="skill-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="m9 21h6M12 17v4M9.5 8 7 10.5 9.5 13M14.5 8 17 10.5 14.5 13"/></svg></div>
+          <div><h3>Frontend</h3><p>Interfaces, grids &amp; interactions</p></div>
+        </div>
+        <div class="chips">
+          <span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript</span>
+          <span class="chip">jQuery</span><span class="chip">Bootstrap</span><span class="chip">DevExtreme</span>
+        </div>
+      </article>
+
+      <article class="skill-card reveal" data-delay="1" style="--ac:#8b5cf6">
+        <div class="skill-head">
+          <div class="skill-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 7.5h.01M7 16.5h.01"/></svg></div>
+          <div><h3>Backend</h3><p>Architecture &amp; business logic</p></div>
+        </div>
+        <div class="chips">
+          <span class="chip">C#</span><span class="chip">ASP.NET Core MVC</span><span class="chip">.NET 7</span>
+          <span class="chip">REST APIs</span><span class="chip">Repository Pattern</span><span class="chip">Service Layer Architecture</span>
+        </div>
+      </article>
+
+      <article class="skill-card reveal" style="--ac:#22d3ee">
+        <div class="skill-head">
+          <div class="skill-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></div>
+          <div><h3>Database</h3><p>SQL Server, queries &amp; optimization</p></div>
+        </div>
+        <div class="chips">
+          <span class="chip">Microsoft SQL Server</span><span class="chip">SQL Queries</span><span class="chip">Stored Procedures</span>
+          <span class="chip">CTEs</span><span class="chip">Views</span><span class="chip">Dynamic SQL</span><span class="chip">Database Optimization</span>
+        </div>
+      </article>
+
+      <article class="skill-card reveal" data-delay="1" style="--ac:#f59e0b">
+        <div class="skill-head">
+          <div class="skill-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4.5 4.5 0 0 0-6 6L3 18l3 3 5.7-5.7a4.5 4.5 0 0 0 6-6L14 13l-3-3 3.7-3.7Z"/></svg></div>
+          <div><h3>Tools &amp; Technologies</h3><p>Daily development environment</p></div>
+        </div>
+        <div class="chips">
+          <span class="chip">Visual Studio</span><span class="chip">Cursor AI</span><span class="chip">Git</span>
+          <span class="chip">GitHub</span><span class="chip">IIS</span><span class="chip">Crystal Reports</span>
+        </div>
+      </article>
+
+      <article class="skill-card wide reveal" style="--ac:#34d399">
+        <div class="skill-head">
+          <div class="skill-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><circle cx="12" cy="12" r="3.2"/><path d="m19 5-1.5 1.5M5 19l1.5-1.5M19 19l-1.5-1.5M5 5l1.5 1.5"/></svg></div>
+          <div><h3>Currently Exploring</h3><p>What I'm learning next — mobile, cloud &amp; DevOps</p></div>
+        </div>
+        <div class="chips">
+          <span class="chip">Flutter</span><span class="chip">Dart</span><span class="chip">Android Development</span>
+          <span class="chip">iOS Development</span><span class="chip">Docker</span><span class="chip">Microsoft Azure</span><span class="chip">Jira</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-tag">Featured Projects</span>
+      <h2>Real-world work, built for real businesses</h2>
+      <p>Production systems I design, build and maintain. These are private enterprise projects — details show scope and technology, not public links.</p>
+    </div>
+    <div class="projects-grid">
+
+      <article class="proj tilt reveal" data-project="erp">
+        <div class="proj-banner" style="--g1:#1d3a8a;--g2:#4f46e5">
+          <span class="proj-priv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg> PRIVATE PROJECT</span>
+          <svg class="big-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17V7l8-4 8 4v10l-8 4z"/><path d="M4 7l8 4 8-4M12 11v10"/></svg>
+          <span class="proj-cat">Enterprise Software</span>
+        </div>
+        <div class="proj-body">
+          <h3>Enterprise ERP System</h3>
+          <p>A complete business management platform covering inventory, sales, purchasing and finance — built on a layered ASP.NET Core architecture with SQL Server at its core.</p>
+          <div class="tags"><span class="tag">ASP.NET Core MVC</span><span class="tag">C#</span><span class="tag">SQL Server</span><span class="tag">DevExtreme</span></div>
+          <div class="proj-foot">
+            <button class="details-btn" data-open="erp">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+            <span class="proj-feat-count">7 capabilities</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj tilt reveal" data-delay="1" data-project="dashboard">
+        <div class="proj-banner" style="--g1:#0e7490;--g2:#2563eb">
+          <span class="proj-priv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg> PRIVATE PROJECT</span>
+          <svg class="big-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="8" height="10" rx="1.5"/><rect x="13" y="3" width="8" height="6" rx="1.5"/><rect x="13" y="11" width="8" height="10" rx="1.5"/><rect x="3" y="15" width="8" height="6" rx="1.5"/></svg>
+          <span class="proj-cat">Dashboards &amp; Analytics</span>
+        </div>
+        <div class="proj-body">
+          <h3>Interactive ERP Dashboard</h3>
+          <p>A permission-aware dashboard with dynamic widgets, branch-wise filtering and live business summaries — inventory valuation, bank &amp; cash positions and aging analysis at a glance.</p>
+          <div class="tags"><span class="tag">JavaScript</span><span class="tag">DevExtreme</span><span class="tag">Charts</span><span class="tag">SQL Server</span></div>
+          <div class="proj-foot">
+            <button class="details-btn" data-open="dashboard">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+            <span class="proj-feat-count">7 capabilities</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj tilt reveal" data-project="fbr">
+        <div class="proj-banner" style="--g1:#065f46;--g2:#0d9488">
+          <span class="proj-priv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg> PRIVATE PROJECT</span>
+          <svg class="big-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM21 14v.01M14 21v.01M18 18h3v3h-3z"/></svg>
+          <span class="proj-cat">API Integration</span>
+        </div>
+        <div class="proj-body">
+          <h3>FBR Digital Invoice Integration</h3>
+          <p>End-to-end integration with Pakistan's FBR Digital Invoicing system — payload generation, QR-coded invoices, push-status monitoring and robust error handling inside the ERP.</p>
+          <div class="tags"><span class="tag">REST API</span><span class="tag">C#</span><span class="tag">QR Code</span><span class="tag">JSON</span></div>
+          <div class="proj-foot">
+            <button class="details-btn" data-open="fbr">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+            <span class="proj-feat-count">6 capabilities</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj tilt reveal" data-delay="1" data-project="inventory">
+        <div class="proj-banner" style="--g1:#9a3412;--g2:#b45309">
+          <span class="proj-priv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg> PRIVATE PROJECT</span>
+          <svg class="big-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2M4 8h16M4 8v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8M8 12v4M12 12v4M16 12v4"/></svg>
+          <span class="proj-cat">Inventory &amp; Stock</span>
+        </div>
+        <div class="proj-body">
+          <h3>Advanced Inventory Management</h3>
+          <p>Stock adjustment and transfer workflows with barcode management, batch &amp; lot tracking and always-accurate current-stock calculations backed by strict validation.</p>
+          <div class="tags"><span class="tag">ASP.NET Core</span><span class="tag">SQL Server</span><span class="tag">Barcode</span><span class="tag">DevExtreme</span></div>
+          <div class="proj-foot">
+            <button class="details-btn" data-open="inventory">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+            <span class="proj-feat-count">6 capabilities</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj tilt reveal" data-project="reporting">
+        <div class="proj-banner" style="--g1:#6d28d9;--g2:#db2777">
+          <span class="proj-priv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg> PRIVATE PROJECT</span>
+          <svg class="big-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>
+          <span class="proj-cat">Reporting</span>
+        </div>
+        <div class="proj-body">
+          <h3>Business Reporting System</h3>
+          <p>A reporting engine powered by complex stored procedures and CTE-based queries — financial statements, aging reports and print-ready Crystal Reports for decision makers.</p>
+          <div class="tags"><span class="tag">Stored Procedures</span><span class="tag">CTEs</span><span class="tag">Crystal Reports</span><span class="tag">SQL Server</span></div>
+          <div class="proj-foot">
+            <button class="details-btn" data-open="reporting">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+            <span class="proj-feat-count">6 capabilities</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj tilt reveal" data-delay="1" data-project="mobile">
+        <div class="proj-banner" style="--g1:#0369a1;--g2:#0891b2">
+          <span class="proj-priv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 3v3M12 18v3M5 8l-2 2M21 8l2 2" opacity="0"/><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg> LEARNING PROJECT</span>
+          <svg class="big-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>
+          <span class="proj-cat">Mobile Development</span>
+        </div>
+        <div class="proj-body">
+          <h3>Mobile App Development Journey</h3>
+          <p>My path into cross-platform mobile development with Flutter and Dart — including an Employee Salary Calculator app while learning mobile architecture for Android &amp; iOS.</p>
+          <div class="tags"><span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Android</span><span class="tag">iOS</span></div>
+          <div class="proj-foot">
+            <button class="details-btn" data-open="mobile">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+            <span class="proj-feat-count">5 capabilities</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- Journey -->
+<section id="journey">
+  <div class="wrap">
+    <div class="sec-head reveal" style="margin-left:auto;margin-right:auto;text-align:center">
+      <span class="sec-tag" style="justify-content:center">My Development Journey</span>
+      <h2>How I got here, step by step</h2>
+    </div>
+    <div class="timeline">
+      <div class="tl-item reveal"><span class="tl-dot"></span><div class="tl-card"><span class="tl-step">Foundation</span><h3>Learning Programming Fundamentals</h3><p>Started with the core building blocks — logic, data types, control flow and problem solving — the base everything else stands on.</p></div></div>
+      <div class="tl-item reveal"><span class="tl-dot"></span><div class="tl-card"><span class="tl-step">Frontend</span><h3>JavaScript &amp; Frontend Development</h3><p>Moved to the browser: HTML, CSS and JavaScript, then jQuery and interactive UI patterns used in real business applications.</p></div></div>
+      <div class="tl-item reveal"><span class="tl-dot"></span><div class="tl-card"><span class="tl-step">Backend</span><h3>Developing ASP.NET Core Applications</h3><p>Learned C# and ASP.NET Core MVC — controllers, services, repositories and the layered architecture behind production web apps.</p></div></div>
+      <div class="tl-item reveal"><span class="tl-dot"></span><div class="tl-card"><span class="tl-step">Enterprise</span><h3>Building ERP Modules &amp; Business Workflows</h3><p>Applied the stack to real business processes: vouchers, approvals, pick-data flows and the day-to-day modules companies run on.</p></div></div>
+      <div class="tl-item reveal"><span class="tl-dot"></span><div class="tl-card"><span class="tl-step">Data</span><h3>Complex SQL Queries &amp; Stored Procedures</h3><p>Went deep into SQL Server — stored procedures, CTEs, views and dynamic SQL that keep business data fast and correct.</p></div></div>
+      <div class="tl-item reveal"><span class="tl-dot"></span><div class="tl-card"><span class="tl-step">Insights</span><h3>Dashboards &amp; Reporting Systems</h3><p>Turned raw data into decisions: interactive dashboards, aging analysis, financial reports and print-ready documents.</p></div></div>
+      <div class="tl-item reveal"><span class="tl-dot"></span><div class="tl-card"><span class="tl-step">Integration</span><h3>Integrating FBR Digital Invoicing</h3><p>Connected the ERP to Pakistan's FBR Digital Invoicing APIs — payloads, QR codes and status tracking inside the sales flow.</p></div></div>
+      <div class="tl-item reveal"><span class="tl-dot"></span><div class="tl-card"><span class="tl-step">Mobile</span><h3>Exploring Flutter &amp; Cross-Platform Mobile</h3><p>Started the mobile chapter with Flutter and Dart, building for Android and iOS from a single codebase.</p></div></div>
+      <div class="tl-item reveal"><span class="tl-dot"></span><div class="tl-card"><span class="tl-step">Next</span><h3>Docker, Azure &amp; Modern Dev Tools</h3><p>Now exploring containers, cloud deployment and the modern toolchain — Docker, Microsoft Azure and AI-assisted development.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-tag">What I Do</span>
+      <h2>Services I can help with</h2>
+    </div>
+    <div class="services-grid">
+      <article class="svc reveal"><div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="m9 21h6M12 17v4M9.5 8 7 10.5 9.5 13M14.5 8 17 10.5 14.5 13"/></svg></div><h3>Full Stack Web Development</h3><p>Complete web applications — frontend, backend and database — built end to end.</p></article>
+      <article class="svc reveal" data-delay="1"><div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17V7l8-4 8 4v10l-8 4z"/><path d="M4 7l8 4 8-4M12 11v10"/></svg></div><h3>ERP Development</h3><p>Custom ERP modules and workflows matched to how your business actually runs.</p></article>
+      <article class="svc reveal" data-delay="2"><div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></div><h3>SQL Server Development</h3><p>Stored procedures, complex queries and performance tuning on SQL Server.</p></article>
+      <article class="svc reveal" data-delay="3"><div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16M4 12h10M4 19h13"/><circle cx="19" cy="12" r="2"/><circle cx="8" cy="19" r="0"/></svg></div><h3>Database Design</h3><p>Schemas and relationships designed for integrity, speed and future growth.</p></article>
+      <article class="svc reveal"><div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="8" height="10" rx="1.5"/><rect x="13" y="3" width="8" height="6" rx="1.5"/><rect x="13" y="11" width="8" height="10" rx="1.5"/><rect x="3" y="15" width="8" height="6" rx="1.5"/></svg></div><h3>Dashboard Development</h3><p>Interactive dashboards with widgets, filters and permission-based views.</p></article>
+      <article class="svc reveal" data-delay="1"><div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 10a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg></div><h3>API Integration</h3><p>Connecting your systems to third-party APIs — invoicing, payments and more.</p></article>
+      <article class="svc reveal" data-delay="2"><div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5z"/></svg></div><h3>Business Automation</h3><p>Automating repetitive workflows so teams save hours every single week.</p></article>
+      <article class="svc reveal" data-delay="3"><div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg></div><h3>Reporting Solutions</h3><p>Financial and operational reports — on screen, in Excel and print-ready.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-tag">Contact</span>
+      <h2>Let's build something smart</h2>
+      <p>Have a project, a role, or a business process that needs better software? Send a message and I'll get back to you.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <a class="c-card" href="#" data-contact-link="email">
+          <span class="c-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+          <span><h4>Email</h4><p>hamidraza2048@gmail.com</p></span>
+        </a>
+        <a class="c-card" href="#" data-contact-link="github">
+          <span class="c-ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span>
+          <span><h4>GitHub</h4><p>github.com/your-username</p></span>
+        </a>
+        <a class="c-card" href="#" data-contact-link="linkedin">
+          <span class="c-ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg></span>
+          <span><h4>LinkedIn</h4><p>linkedin.com/in/your-profile</p></span>
+        </a>
+        <div class="c-card">
+          <span class="c-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>
+          <span><h4>Response time</h4><p>Usually within 24 hours</p></span>
+        </div>
+      </div>
+
+      <form class="form-card reveal" data-delay="1" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="field">
+            <label for="fName">Your Name</label>
+            <input id="fName" name="name" type="text" placeholder="e.g. Your Name" autocomplete="name" required />
+          </div>
+          <div class="field">
+            <label for="fEmail">Your Email</label>
+            <input id="fEmail" name="email" type="email" placeholder="you@company.com" autocomplete="email" required />
+          </div>
+        </div>
+        <div class="field">
+          <label for="fSubject">Subject</label>
+          <input id="fSubject" name="subject" type="text" placeholder="Project inquiry, job opportunity, collaboration…" required />
+        </div>
+        <div class="field">
+          <label for="fMessage">Message</label>
+          <textarea id="fMessage" name="message" placeholder="Tell me about your project or the role you have in mind…" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary magnetic" style="width:100%;justify-content:center">
+          Send Message
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13"/></svg>
+        </button>
+        <p class="form-note" id="formNote" role="status"></p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot-inner">
+    <p>© 2026 Full Stack Developer — ERP · ASP.NET Core · SQL Server. Built with clean code &amp; coffee.</p>
+    <a class="to-top" href="#home" aria-label="Back to top">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+    </a>
+  </div>
+</footer>
+
+<!-- Project Modal -->
+<div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal">
+    <button class="modal-close" id="modalClose" aria-label="Close details">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+    <span class="m-cat" id="modalCat"></span>
+    <h3 id="modalTitle"></h3>
+    <p id="modalDesc"></p>
+    <h4>Key capabilities</h4>
+    <ul id="modalList"></ul>
+    <div class="tags" id="modalTags" style="margin-top:22px"></div>
+    <p class="m-note" id="modalNote"></p>
+  </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
