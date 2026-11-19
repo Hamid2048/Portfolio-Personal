@@ -357,52 +357,52 @@ var CONTACT = {
   /* Project modal */
   var PROJECTS = {
     erp: {
-      cat: "Enterprise Software · Private Project",
+      cat: "Enterprise Software - Private Project",
       title: "Enterprise ERP System",
       desc: "A complete business management platform built on ASP.NET Core MVC with a layered Controller → Service → Repository architecture. It centralizes the modules a growing business runs on every day, with SQL Server handling the data layer through stored procedures and views.",
       features: ["Business management modules", "Inventory & stock management", "Sales & purchase management", "Financial reporting", "Role-based access & permissions", "Branch-wise data handling", "Voucher-based workflows"],
       tags: ["ASP.NET Core MVC", "C#", ".NET 7", "SQL Server", "DevExtreme", "Bootstrap"],
-      note: "Private enterprise project — source code and live demo are not public. Happy to walk through the architecture in a call."
+      note: "Private enterprise project - source code and live demo are not public. Happy to walk through the architecture in a call."
     },
     dashboard: {
-      cat: "Dashboards & Analytics · Private Project",
+      cat: "Dashboards & Analytics - Private Project",
       title: "Interactive ERP Dashboard",
       desc: "A dynamic dashboard layer on top of the ERP that gives each user a personalized, permission-aware view of the business. Widgets load per user rights and respond instantly to branch filters.",
       features: ["Dynamic dashboard widgets", "Branch-wise filtering", "User-based dashboard permissions", "Inventory valuation", "Bank & cash summaries", "Aging analysis", "Interactive charts & grids"],
       tags: ["JavaScript", "DevExtreme", "Charts", "SQL Server", "C#"],
-      note: "Private enterprise project — screenshots contain live business data, so they are shared only on request."
+      note: "Private enterprise project - screenshots contain live business data, so they are shared only on request."
     },
     fbr: {
-      cat: "API Integration · Private Project",
+      cat: "API Integration - Private Project",
       title: "FBR Digital Invoice Integration",
-      desc: "Integration between the ERP sales module and Pakistan's FBR Digital Invoicing system. Invoices are converted into the FBR payload format, pushed through the API, and stamped with a QR code once accepted — with full visibility of every push attempt.",
+      desc: "Integration between the ERP sales module and Pakistan's FBR Digital Invoicing system. Invoices are converted into the FBR payload format, pushed through the API, and stamped with a QR code once accepted - with full visibility of every push attempt.",
       features: ["FBR Digital Invoicing", "API integration", "Invoice payload generation", "QR code generation", "Invoice push status monitoring", "Error handling & retry visibility"],
       tags: ["REST API", "C#", "JSON", "QR Code", "SQL Server"],
-      note: "Private enterprise project — built against the official FBR Digital Invoicing API specification."
+      note: "Private enterprise project - built against the official FBR Digital Invoicing API specification."
     },
     inventory: {
-      cat: "Inventory & Stock · Private Project",
+      cat: "Inventory & Stock - Private Project",
       title: "Advanced Inventory Management",
       desc: "The stock engine of the ERP: adjustment and transfer vouchers, barcode-driven picking, and batch/lot-level traceability. Current stock is computed from validated movements, so reports always match the warehouse floor.",
       features: ["Stock Adjustment", "Stock Transfer", "Barcode management", "Batch & lot tracking", "Current stock calculations", "Data validation at every step"],
       tags: ["ASP.NET Core", "C#", "SQL Server", "Barcode", "DevExtreme"],
-      note: "Private enterprise project — includes the voucher copy workflow and print-ready stock documents."
+      note: "Private enterprise project - includes the voucher copy workflow and print-ready stock documents."
     },
     reporting: {
-      cat: "Reporting · Private Project",
+      cat: "Reporting - Private Project",
       title: "Business Reporting System",
-      desc: "A flexible reporting system where one screen serves many reports: stored procedures return the data, C# maps it, and the grid reshapes itself per report — with grouping, summaries and print output.",
+      desc: "A flexible reporting system where one screen serves many reports: stored procedures return the data, C# maps it, and the grid reshapes itself per report - with grouping, summaries and print output.",
       features: ["SQL Server stored procedures", "Complex SQL queries", "CTE-based reports", "Financial reports", "Aging reports", "Crystal Reports printing"],
       tags: ["Stored Procedures", "CTEs", "Crystal Reports", "SQL Server", "DevExtreme"],
-      note: "Private enterprise project — report definitions are data-driven, so new reports plug in without new screens."
+      note: "Private enterprise project - report definitions are data-driven, so new reports plug in without new screens."
     },
     mobile: {
-      cat: "Mobile Development · Learning Project",
+      cat: "Mobile Development - Learning Project",
       title: "Mobile App Development Journey",
-      desc: "My ongoing path into cross-platform mobile development. I'm learning Flutter and Dart by building real, small apps — starting with an Employee Salary Calculator — while studying mobile architecture, state management and platform differences.",
+      desc: "My ongoing path into cross-platform mobile development. I'm learning Flutter and Dart by building real, small apps - starting with an Employee Salary Calculator - while studying mobile architecture, state management and platform differences.",
       features: ["Flutter & Dart fundamentals", "Android & iOS from one codebase", "Employee Salary Calculator app", "Mobile application architecture", "UI widgets & navigation patterns"],
       tags: ["Flutter", "Dart", "Android", "iOS"],
-      note: "Learning project — in progress. This is where my next skill chapter is being written."
+      note: "Learning project - in progress. This is where my next skill chapter is being written."
     }
   };
   var backdrop = document.getElementById("modalBackdrop");
@@ -450,11 +450,11 @@ var CONTACT = {
     }
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       note.classList.add("err");
-      note.textContent = "That email address doesn't look right — please check it.";
+      note.textContent = "That email address doesn't look right - please check it.";
       return;
     }
     note.classList.remove("err");
-    var body = "Hi,\n\n" + message + "\n\n— " + name + " (" + email + ")";
+    var body = "Hi,\n\n" + message + "\n\n- " + name + " (" + email + ")";
     window.location.href = "mailto:" + CONTACT.email +
       "?subject=" + encodeURIComponent(subject) +
       "&body=" + encodeURIComponent(body);
