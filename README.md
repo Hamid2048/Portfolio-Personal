@@ -1,10 +1,10 @@
-# Personal Developer Portfolio
+# Hamid Raza — Developer Portfolio
 
-A premium, dark-themed personal portfolio website for a Full Stack Developer
+A premium, dark-themed personal portfolio website for Hamid Raza, a Full Stack Developer
 specialising in ERP systems, ASP.NET Core MVC, SQL Server database
 development, business dashboards and reporting systems.
 
-Live site: **https://hania.onrender.com/**
+Live site: **https://hamidraza.onrender.com/**
 
 ## Tech Stack
 
@@ -51,3 +51,4 @@ Every push to the `main` branch auto-deploys.
 
 - Email: hamidraza2048@gmail.com
 - GitHub: https://github.com/Hamid2048
+- LinkedIn: https://www.linkedin.com/in/hamid-razaa
