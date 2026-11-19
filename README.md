@@ -1,7 +1,7 @@
 # Hamid Raza - Developer Portfolio
 
 A premium, dark-themed personal portfolio website for Hamid Raza, a Full Stack Developer
-specialising in ERP systems, ASP.NET Core MVC, SQL Server database
+specialising in ASP.NET Core MVC, ERP systems, SQL Server database
 development, business dashboards and reporting systems.
 
 Live site: **https://hamidraza.onrender.com/**
