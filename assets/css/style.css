@@ -426,7 +426,7 @@ a.c-card:hover{border-color:rgba(34,211,238,.4);background:var(--surface-2)}
 /* Footer */
 footer{border-top:1px solid var(--stroke-soft);padding:34px 0 40px;position:relative;z-index:1}
 .foot-inner{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}
-footer p{color:var(--muted);font-size:14px}
+footer p{flex:1;text-align:center;color:var(--muted);font-size:14px}
 .to-top{
   width:46px;height:46px;border-radius:12px;border:1px solid var(--stroke);background:var(--surface);color:var(--text-2);
   display:inline-flex;align-items:center;justify-content:center;transition:color .3s var(--ease-soft),border-color var(--dur) var(--ease),transform var(--dur) var(--ease);
