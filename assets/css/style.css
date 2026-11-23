@@ -63,7 +63,6 @@ p{margin:0}
 #loader.done{opacity:0;visibility:hidden}
 .loader-mark{
   font-family:var(--font-m);font-size:15px;letter-spacing:.35em;color:var(--text-2);
-  text-transform:uppercase;
 }
 .loader-mark b{color:var(--text);font-weight:600}
 .loader-bar{width:180px;height:2px;background:rgba(255,255,255,.1);border-radius:2px;overflow:hidden}
